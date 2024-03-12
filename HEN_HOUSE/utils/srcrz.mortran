@@ -2893,7 +2893,7 @@ END;   "END OF SUBROUTINE SRCRZ"
 
 subroutine src15;
 
-implicit none;
+$IMPLICIT-NONE;
 
 ;COMIN/GEOM,IODAT2,RANDOM,SOURCE/;
 
@@ -3066,7 +3066,7 @@ end;
  subroutine src16;
 "======================================================================"
 
-implicit none;
+$IMPLICIT-NONE;
 
 ;COMIN/GEOM,IODAT2,RANDOM,SOURCE/;
 
