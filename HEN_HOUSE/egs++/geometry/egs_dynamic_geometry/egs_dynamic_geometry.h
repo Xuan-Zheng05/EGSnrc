@@ -249,6 +249,7 @@ public:
         //create and set the current geometry transformation using the sampled coordinates from getCoordGeom. This is where overloaded EGsSAffineTransform is used
 	EGS_AffineTransform *tDG = EGS_AffineTransform::getTransformation(gipt.trnsl, gipt.rot);
 	setTransformation(*tDG);
+    delete tDG;
         //call getNextGeom on base geometry in case there are lower level dynamic geometries
 	g->getNextGeom(rndm);
     };
@@ -262,6 +263,7 @@ public:
         //create and set the geometry transform with the updated coordinates
         EGS_AffineTransform *tDG = EGS_AffineTransform::getTransformation(gipt.trnsl, gipt.rot);
         setTransformation(*tDG);
+        delete tDG;
         //call update positions on base to allow lower level geometries to update as needed
         g->updatePosition(time);
     };
