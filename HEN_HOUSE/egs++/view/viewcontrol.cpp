@@ -79,6 +79,7 @@ typedef EGS_BaseSource *(*createSourceFunction)();
 typedef EGS_BaseShape *(*createShapeFunction)();
 typedef EGS_AusgabObject *(*createAusgabObjectFunction)();
 typedef shared_ptr<EGS_InputStruct> (*getAppInputsFunction)();
+typedef shared_ptr<EGS_InputStruct> (*getAppInputsFunction2)();
 typedef shared_ptr<EGS_BlockInput> (*getInputsFunction)();
 typedef string (*getExampleFunction)();
 
@@ -301,8 +302,12 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
             action->setData(QString::fromStdString(getExample()));
             connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
         }
-        
+
+        getAppInputsFunction2 getAppInputs2 = (getAppInputsFunction2) app_lib.resolve("getAppInputs2");
+        egsInformation("getAppInput2 %s\n", getAppInputs2 ? "true" : "false");
+
         getAppInputsFunction getAppInputs = (getAppInputsFunction) app_lib.resolve("getAppInputs");
+        egsInformation("getAppInput1 %s\n", getAppInputs ? "true" : "false");
         if(getAppInputs) {
 
             // before this was a BlockInput, now it is a InputStruct

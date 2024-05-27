@@ -1845,4 +1845,67 @@ extern "C" {
         }
     }
 
+    EGS_FLUENCE_SCORING_EXPORT string getExample() {
+        string example;
+        example = {
+            R"(
+    # Example of egs_fluence_scoring
+    :start ausgab object:
+        library = egs_fluence_scoring
+        name = my_score
+        type = planar
+        scoring particle = photon  # or electron, or positron
+        source particle  = photon  # or electron, or positron
+                                   # Optional. Only required to score primary fluence.
+                                   # Defaults to source particles if all the same.
+                                   # In the case of multiple particles,
+                                   # defaults to scoring particle. Useful for
+                                   # bremsstrahlung targets and radioactive sources.
+        score primaries = no       # Yes or no. Defaults to `no`
+        score spectrum  = no       # Yes or no. Defaults to `no`
+        verbose         = no       # Yes or no. Defaults to `no`
+        normalization   = 1        # User-requested normalization. Defaults to 1.
+        #########
+        # If scoring spectrum, define energy grid
+        # Default: 128 linear energy bins between 1 keV and 1 MeV
+        #########
+        :start energy grid:
+        number of bins = nbins
+        minimum kinetic energy = Emin
+        maximum kinetic energy = Emax
+        scale = linear or logarithmic # Defaults to `linear`.
+        :stop energy grid:
+        ########
+        # Define scoring based on type
+        ########
+        :start planar scoring:
+        # Define contributing regions
+        contributing regions = ir1   # ir2 ... irn
+        ### Alternatively:
+        # start contributing region = iri_1, iri_2, ..., iri_n
+        # stop contributing region =  irf_1, irf_2, ..., irf_n
+        ###
+        ################################
+        # If a circular field desired:
+        ################################
+        scoring circle = x y z R
+        scoring plane normal = ux uy uz
+        ########################################################
+        # If a rectangular field desired:
+        #
+        #scoring rectangle = xmin xmax ymin ymax
+        #####
+        # See documentation for EGS_AffineTransform
+        #####
+        #:start transformation:
+        #   rotation = 2, 3 or 9 floating point numbers
+        #   translation = tx, ty, tz
+        #:stop transformation:
+        ##########################################################
+        :stop planar scoring:
+    :stop ausgab object:
+)"};
+        return example;
+    }
+
 }

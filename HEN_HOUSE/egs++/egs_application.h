@@ -1272,6 +1272,15 @@ public:
             addRunControlBlock(appInputStruct);\
             return appInputStruct;\
         }\
+        APP_EXPORT shared_ptr<EGS_InputStruct> getAppInputs2() {\
+            shared_ptr<EGS_InputStruct> appInputStruct = make_shared<EGS_InputStruct>();\
+            addmcBlock(appInputStruct);\
+            addvrBlock(appInputStruct);\
+            addScoringBlock(appInputStruct);\
+            addRngDefinitionBlock(appInputStruct);\
+            addRunControlBlock(appInputStruct);\
+            return appInputStruct;\
+        }\
         APP_EXPORT string getRunControlExample() {\
             return "test";\
         }\
