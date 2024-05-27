@@ -1,0 +1,17 @@
+.obj/win3264/main.o
+.obj/win3264/egs_visualizer.o
+.obj/win3264/egs_track_view.o
+.obj/win3264/saveimage.o
+.obj/win3264/clippingplanes.o
+.obj/win3264/viewcontrol.o
+.obj/win3264/renderworker.o
+.obj/win3264/image_window.o
+.obj/win3264/egs_highlighter.o
+.obj/win3264/egs_editor.o
+.obj/win3264/moc_image_window.o
+.obj/win3264/moc_clippingplanes.o
+.obj/win3264/moc_viewcontrol.o
+.obj/win3264/moc_saveimage.o
+.obj/win3264/moc_renderworker.o
+.obj/win3264/moc_egs_highlighter.o
+.obj/win3264/moc_egs_editor.o
