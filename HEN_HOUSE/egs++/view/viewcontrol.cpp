@@ -287,27 +287,7 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
 
     if(app_loaded) {
 
-        // Add the examples from the Application library
-        getExampleFunction getExample = (getExampleFunction) app_lib.resolve("getRunControlExample");
-        egsInformation("getExample %s\n", getExample ? "true" : "false");
-        if (getExample) {
-            QAction *action = runMenu->addAction("egs_run_control");
-            action->setData(QString::fromStdString(getExample()));
-            connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
-        }
-
-        getExample = (getExampleFunction) app_lib.resolve("getRngDefinitionExample");
-        if (getExample) {
-            QAction *action = appMenu->addAction("egs_rng_definition");
-            action->setData(QString::fromStdString(getExample()));
-            connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
-        }
-
-        getAppInputsFunction2 getAppInputs2 = (getAppInputsFunction2) app_lib.resolve("getAppInputs2");
-        egsInformation("getAppInput2 %s\n", getAppInputs2 ? "true" : "false");
-
         getAppInputsFunction getAppInputs = (getAppInputsFunction) app_lib.resolve("getAppInputs");
-        egsInformation("getAppInput1 %s\n", getAppInputs ? "true" : "false");
         if(getAppInputs) {
 
             // before this was a BlockInput, now it is a InputStruct
@@ -356,6 +336,21 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
         //         }
         //     }
         // }
+        
+        // Add the examples from the Application library
+        getExampleFunction getExample = (getExampleFunction) app_lib.resolve("getRunControlExample");
+        if (getExample) {
+            QAction *action = runMenu->addAction("egs_run_control");
+            action->setData(QString::fromStdString(getExample()));
+            connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
+        }
+
+        getExample = (getExampleFunction) app_lib.resolve("getRngDefinitionExample");
+        if (getExample) {
+            QAction *action = appMenu->addAction("egs_rng_definition");
+            action->setData(QString::fromStdString(getExample()));
+            connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
+        }
     }
 
     // Geometry definition block

@@ -54,11 +54,11 @@ static void addRngDefinitionBlock(shared_ptr<EGS_InputStruct> blockPtr) {
 static string addRngDefinitionExample() {
     string example = {
         R"(
-    :start rng definition:
-        type = ranmar
-        initial seeds = 33 97
-        high resolution = no
-    :stop rng definition:
+:start rng definition:
+    type = ranmar
+    initial seeds = 33 97
+    high resolution = no
+:stop rng definition:
 )"};
     return example;
 }

@@ -1263,15 +1263,6 @@ public:
         APP_EXPORT EGS_Application* createApplication(int argc, char **argv) {\
             return new app_name(argc, argv);\
         }\
-        APP_EXPORT shared_ptr<EGS_InputStruct> getAppInputs2() {\
-            shared_ptr<EGS_InputStruct> appInputStruct = make_shared<EGS_InputStruct>();\
-            addmcBlock(appInputStruct);\
-            addvrBlock(appInputStruct);\
-            addScoringBlock(appInputStruct);\
-            addRngDefinitionBlock(appInputStruct);\
-            addRunControlBlock(appInputStruct);\
-            return appInputStruct;\
-        }\
         APP_EXPORT shared_ptr<EGS_InputStruct> getAppInputs() {\
             shared_ptr<EGS_InputStruct> appInputStruct = make_shared<EGS_InputStruct>();\
             addmcBlock(appInputStruct);\
@@ -1282,7 +1273,7 @@ public:
             return appInputStruct;\
         }\
         APP_EXPORT string getRunControlExample() {\
-            return "test";\
+            return addRunControlExample();\
         }\
         APP_EXPORT string getRngDefinitionExample() {\
             return addRngDefinitionExample();\

@@ -279,9 +279,9 @@ compiler_moc_header_clean:
 
 .moc/win3264/moc_clippingplanes.cpp: clippingplanes.h \
 		.ui/win3264/ui_clippingplanes.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
@@ -293,29 +293,37 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsysinfo.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlogging.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qflags.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobalstatic.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasicatomic.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_bootstrap.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qgenericatomic.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_cxx11.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_msvc.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobalstatic.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhashfunctions.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringliteral.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringalgorithms.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhashfunctions.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpair.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvector.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainertools_impl.h \
@@ -324,43 +332,16 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlist.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregexp.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qscopedpointer.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmetatype.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhash.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtextstream.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiodevice.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreevent.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qscopedpointer.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlocale.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qshareddata.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qset.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmargins.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpaintdevice.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrect.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcolor.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
@@ -370,246 +351,42 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpolygon.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qregion.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdatastream.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiodevice.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qline.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtransform.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixmap.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qshareddata.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhash.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer_impl.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qevent.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtextstream.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlocale.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qset.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontiguouscache.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurl.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurlquery.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfile.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGroupBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgroupbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHeaderView \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qheaderview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qitemselectionmodel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyleoption.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvalidator.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregularexpression.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyle.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTableWidget \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtablewidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtableview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
-		../egs_vector.h \
-		../egs_functions.h \
-		../egs_libconfig.h \
-		../missing.h \
-		../../lib/win3264/egs_config1.h \
-		../egs_math.h \
 		.moc/win3264/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	C:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include C:/EGSnrc/HEN_HOUSE/egs++/view/.moc/win3264/moc_predefs.h -IC:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -IC:/EGSnrc/HEN_HOUSE/egs++/view -IC:/EGSnrc/HEN_HOUSE/egs++/view -IC:/EGSnrc/HEN_HOUSE/egs++ -IC:/EGSnrc/HEN_HOUSE/lib/win3264 -IC:/Qt/5.15.2/mingw81_64/include -IC:/Qt/5.15.2/mingw81_64/include/QtWidgets -IC:/Qt/5.15.2/mingw81_64/include/QtGui -IC:/Qt/5.15.2/mingw81_64/include/QtANGLE -IC:/Qt/5.15.2/mingw81_64/include/QtCore -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include clippingplanes.h -o .moc\win3264\moc_clippingplanes.cpp
 
 .moc/win3264/moc_viewcontrol.cpp: viewcontrol.h \
 		.ui/win3264/ui_viewcontrol.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtcore-config.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsystemdetection.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qprocessordetection.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcompilerdetection.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtypeinfo.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsysinfo.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlogging.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qflags.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobalstatic.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasicatomic.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_bootstrap.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qgenericatomic.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_cxx11.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_msvc.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhashfunctions.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringliteral.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringalgorithms.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringbuilder.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpair.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvector.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainertools_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpoint.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearraylist.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlist.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregexp.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringmatcher.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmetatype.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhash.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtextstream.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiodevice.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreevent.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qscopedpointer.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlocale.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qshareddata.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qset.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QAction \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmargins.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpaintdevice.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrect.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcolor.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbrush.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qmatrix.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpolygon.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qregion.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdatastream.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qline.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtransform.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixmap.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qevent.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurlquery.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfile.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QCheckBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcheckbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QComboBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcombobox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyleoption.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvalidator.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregularexpression.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyle.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGridLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGroupBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgroupbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHBoxLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHeaderView \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qheaderview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qitemselectionmodel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLineEdit \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextformat.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmainwindow.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMenu \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenu.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMenuBar \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenubar.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QScrollArea \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollarea.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSlider \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpacerItem \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpinBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qspinbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTabWidget \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTableWidget \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtablewidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtableview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTextBrowser \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtextbrowser.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtextedit.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextdocument.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
 		egs_user_color.h \
 		../egs_vector.h \
 		../egs_functions.h \
@@ -620,26 +397,139 @@ compiler_moc_header_clean:
 		egs_highlighter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/QSyntaxHighlighter \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qsyntaxhighlighter.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobal.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig-bootstrapped.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconfig.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtcore-config.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsystemdetection.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qprocessordetection.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcompilerdetection.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtypeinfo.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsysinfo.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlogging.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qflags.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbasicatomic.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_bootstrap.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qgenericatomic.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_cxx11.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qatomic_msvc.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qglobalstatic.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmutex.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnumeric.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringliteral.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringalgorithms.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringview.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhashfunctions.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpair.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvector.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainertools_impl.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpoint.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearraylist.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlist.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregexp.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qscopedpointer.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmetatype.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextobject.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextformat.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcolor.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgba64.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qshareddata.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhash.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer_impl.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtextstream.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiodevice.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlocale.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qset.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontiguouscache.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbrush.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qmatrix.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpolygon.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrect.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmargins.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qregion.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdatastream.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qline.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtransform.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpaintdevice.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixmap.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextlayout.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qevent.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurl.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurlquery.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfile.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qglyphrun.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrawfont.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontdatabase.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/QTextCharFormat \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QRegularExpression \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregularexpression.h \
 		egs_editor.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPlainTextEdit \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qplaintextedit.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtextedit.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextdocument.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qabstracttextdocumentlayout.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QEvent \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QModelIndex \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QtWidgets \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QtWidgetsDepends \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QtCore \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QtCoreDepends \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractanimation.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstracteventdispatcher.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractproxymodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractstate.h \
@@ -666,6 +556,7 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcollator.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcommandlineoption.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcommandlineparser.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconcatenatetablesproxymodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcryptographichash.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdeadlinetimer.h \
@@ -691,6 +582,7 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhistorystate.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qidentityproxymodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qisenum.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qitemselectionmodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qjsonarray.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qjsonvalue.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qjsondocument.h \
@@ -769,6 +661,7 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QRect \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qsurface.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qsurfaceformat.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbitmap.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qclipboard.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcolorspace.h \
@@ -778,6 +671,8 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qgenericmatrix.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qgenericplugin.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qgenericpluginfactory.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qiconengine.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qiconengineplugin.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimageiohandler.h \
@@ -848,15 +743,38 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextdocumentwriter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextlist.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtexttable.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvalidator.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiversion.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qslider.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qaccessiblewidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcalendarwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcheckbox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcolordialog.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcolormap.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcolumnview.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcombobox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcommandlinkbutton.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcommonstyle.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcompleter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdatawidgetmapper.h \
@@ -892,19 +810,28 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicstransform.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/QVector3D \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollarea.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgroupbox.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qheaderview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qinputdialog.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qitemdelegate.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qitemeditorfactory.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qkeyeventtransition.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qkeysequenceedit.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlcdnumber.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlistview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlistwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmainwindow.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmdiarea.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmdisubwindow.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenu.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenubar.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmessagebox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmouseeventtransition.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qopenglwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qprogressbar.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qprogressdialog.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qproxystyle.h \
@@ -916,8 +843,10 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QScrollerProperties \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollerproperties.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QMetaType \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qshortcut.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizegrip.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qspinbox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsplashscreen.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsplitter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstackedlayout.h \
@@ -928,6 +857,9 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstylepainter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyleplugin.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsystemtrayicon.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtableview.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtablewidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtextbrowser.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtoolbar.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtoolbox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtoolbutton.h \
@@ -953,6 +885,8 @@ compiler_moc_header_clean:
 		../egs_run_control.h \
 		../egs_timer.h \
 		../egs_scoring.h \
+		../egs_rndm.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
 		.moc/win3264/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	C:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include C:/EGSnrc/HEN_HOUSE/egs++/view/.moc/win3264/moc_predefs.h -IC:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -IC:/EGSnrc/HEN_HOUSE/egs++/view -IC:/EGSnrc/HEN_HOUSE/egs++/view -IC:/EGSnrc/HEN_HOUSE/egs++ -IC:/EGSnrc/HEN_HOUSE/lib/win3264 -IC:/Qt/5.15.2/mingw81_64/include -IC:/Qt/5.15.2/mingw81_64/include/QtWidgets -IC:/Qt/5.15.2/mingw81_64/include/QtGui -IC:/Qt/5.15.2/mingw81_64/include/QtANGLE -IC:/Qt/5.15.2/mingw81_64/include/QtCore -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include viewcontrol.h -o .moc\win3264\moc_viewcontrol.cpp
@@ -1063,50 +997,6 @@ compiler_moc_header_clean:
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		.ui/win3264/ui_saveimage.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QComboBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcombobox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyleoption.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvalidator.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregularexpression.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyle.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGroupBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgroupbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHBoxLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLineEdit \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextformat.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpacerItem \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpinBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qspinbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout \
 		.moc/win3264/moc_predefs.h \
 		../../../../Qt/5.15.2/mingw81_64/bin/moc.exe
 	C:\Qt\5.15.2\mingw81_64\bin\moc.exe $(DEFINES) --include C:/EGSnrc/HEN_HOUSE/egs++/view/.moc/win3264/moc_predefs.h -IC:/Qt/5.15.2/mingw81_64/mkspecs/win32-g++ -IC:/EGSnrc/HEN_HOUSE/egs++/view -IC:/EGSnrc/HEN_HOUSE/egs++/view -IC:/EGSnrc/HEN_HOUSE/egs++ -IC:/EGSnrc/HEN_HOUSE/lib/win3264 -IC:/Qt/5.15.2/mingw81_64/include -IC:/Qt/5.15.2/mingw81_64/include/QtWidgets -IC:/Qt/5.15.2/mingw81_64/include/QtGui -IC:/Qt/5.15.2/mingw81_64/include/QtANGLE -IC:/Qt/5.15.2/mingw81_64/include/QtCore -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -IC:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -IC:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include saveimage.h -o .moc\win3264\moc_saveimage.cpp
@@ -2317,27 +2207,6 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsversion.h \
 		viewcontrol.h \
 		.ui/win3264/ui_viewcontrol.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QAction \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QCheckBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QComboBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGridLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGroupBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHBoxLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHeaderView \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLineEdit \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMenu \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMenuBar \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QScrollArea \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSlider \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpacerItem \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpinBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTabWidget \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTableWidget \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTextBrowser \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout \
 		egs_user_color.h \
 		../egs_vector.h \
 		../egs_functions.h \
@@ -2363,6 +2232,8 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../egs_run_control.h \
 		../egs_timer.h \
 		../egs_scoring.h \
+		../egs_rndm.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
 		../egs_input.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj\win3264\main.o main.cpp
 
@@ -2601,54 +2472,12 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
 		.ui/win3264/ui_saveimage.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QComboBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcombobox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyleoption.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvalidator.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregularexpression.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyle.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGroupBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgroupbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHBoxLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLineEdit \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextformat.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpen.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextoption.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpacerItem \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpinBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qspinbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qfiledialog.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdir.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfileinfo.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimagewriter.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimageiohandler.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qplugin.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpointer.h \
@@ -2657,6 +2486,7 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcborvalue.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdatetime.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcborcommon.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregularexpression.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/quuid.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfactoryinterface.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj\win3264\saveimage.o saveimage.cpp
@@ -2685,22 +2515,30 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qversiontagging.h \
 		clippingplanes.h \
 		.ui/win3264/ui_clippingplanes.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qnamespace.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhashfunctions.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstring.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qchar.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qbytearray.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrefcount.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringliteral.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringalgorithms.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringbuilder.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlist.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiterator.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhashfunctions.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qpair.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvector.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainertools_impl.h \
@@ -2709,43 +2547,16 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringlist.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregexp.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qstringmatcher.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qscopedpointer.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmetatype.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvarlengtharray.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhash.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtextstream.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiodevice.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreevent.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qscopedpointer.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qobject_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlocale.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qshareddata.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qset.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgetsglobal.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiglobal.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtgui-config.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtwidgets-config.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qwindowdefs_win.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmargins.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qwidget.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpaintdevice.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qrect.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsize.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpalette.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcolor.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrgb.h \
@@ -2755,32 +2566,43 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpolygon.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qregion.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdatastream.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qiodevice.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qline.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtransform.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimage.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixelformat.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qpixmap.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qshareddata.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhash.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qsharedpointer_impl.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfont.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontmetrics.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontinfo.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizepolicy.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcursor.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qkeysequence.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qevent.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qvariant.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qmap.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdebug.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qtextstream.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qlocale.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qset.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcontiguouscache.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurl.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qurlquery.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfile.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qfiledevice.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvector2d.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtouchdevice.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGroupBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgroupbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHeaderView \
+		../egs_libconfig.h \
+		../missing.h \
+		../../lib/win3264/egs_config1.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qheaderview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qitemselectionmodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
@@ -2794,24 +2616,7 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyle.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTableWidget \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtablewidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtableview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
-		../egs_vector.h \
-		../egs_functions.h \
-		../egs_libconfig.h \
-		../missing.h \
-		../../lib/win3264/egs_config1.h \
-		../egs_math.h
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj\win3264\clippingplanes.o clippingplanes.cpp
 
 .obj/win3264/viewcontrol.o: viewcontrol.cpp image_window.h \
@@ -2934,107 +2739,43 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QDialog \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdialog.h \
 		.ui/win3264/ui_saveimage.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QApplication \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QComboBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcombobox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyleoption.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvalidator.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregularexpression.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractslider.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyle.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGroupBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgroupbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHBoxLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLineEdit \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextformat.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPushButton \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpacerItem \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSpinBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qspinbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QVBoxLayout \
 		clippingplanes.h \
 		.ui/win3264/ui_clippingplanes.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QHeaderView \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qheaderview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qitemselectionmodel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QLabel \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTableWidget \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtablewidget.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtableview.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
 		viewcontrol.h \
 		.ui/win3264/ui_viewcontrol.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QAction \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QCheckBox \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcheckbox.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QGridLayout \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmainwindow.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMenu \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenu.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMenuBar \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenubar.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QScrollArea \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollarea.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QSlider \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTabWidget \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QTextBrowser \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtextbrowser.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtextedit.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextdocument.h \
 		egs_user_color.h \
 		egs_highlighter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/QSyntaxHighlighter \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qsyntaxhighlighter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextobject.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextformat.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextlayout.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qglyphrun.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qrawfont.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qfontdatabase.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextcursor.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/QTextCharFormat \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QRegularExpression \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qregularexpression.h \
 		egs_editor.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QPlainTextEdit \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qplaintextedit.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtextedit.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qframe.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextdocument.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qabstracttextdocumentlayout.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QObject \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QEvent \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QModelIndex \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QtWidgets \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QtWidgetsDepends \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QtCore \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QtCoreDepends \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractanimation.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstracteventdispatcher.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qeventloop.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractnativeeventfilter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractproxymodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qabstractstate.h \
@@ -3061,6 +2802,7 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcollator.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcommandlineoption.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcommandlineparser.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcoreapplication.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qconcatenatetablesproxymodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qcryptographichash.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qdeadlinetimer.h \
@@ -3086,6 +2828,7 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qhistorystate.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qidentityproxymodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qisenum.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qitemselectionmodel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qjsonarray.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qjsonvalue.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/qjsondocument.h \
@@ -3164,6 +2907,7 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QRect \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qsurface.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qsurfaceformat.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qicon.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qbitmap.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qclipboard.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qcolorspace.h \
@@ -3173,6 +2917,8 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qgenericmatrix.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qgenericplugin.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qgenericpluginfactory.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qguiapplication.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qinputmethod.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qiconengine.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qiconengineplugin.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qimageiohandler.h \
@@ -3242,14 +2988,37 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextdocumentwriter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtextlist.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtexttable.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qvalidator.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/qtguiversion.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyleoption.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractspinbox.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qslider.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractslider.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyle.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabbar.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtabwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qrubberband.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qabstractitemview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qaccessiblewidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qaction.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qactiongroup.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qapplication.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdesktopwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qboxlayout.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayout.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlayoutitem.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgridlayout.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qbuttongroup.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcalendarwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcheckbox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcolordialog.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcolormap.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcolumnview.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcombobox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcommandlinkbutton.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qpushbutton.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcommonstyle.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qcompleter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qdatawidgetmapper.h \
@@ -3285,19 +3054,28 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicstransform.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtGui/QVector3D \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgraphicsview.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollarea.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qgroupbox.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qheaderview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qinputdialog.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlineedit.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qitemdelegate.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qitemeditorfactory.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qkeyeventtransition.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qkeysequenceedit.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlabel.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlcdnumber.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlistview.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qlistwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmainwindow.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmdiarea.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmdisubwindow.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenu.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmenubar.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmessagebox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qmouseeventtransition.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qopenglwidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QWidget \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qprogressbar.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qprogressdialog.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qproxystyle.h \
@@ -3309,8 +3087,10 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QScrollerProperties \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qscrollerproperties.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QMetaType \
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QVariant \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qshortcut.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsizegrip.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qspinbox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsplashscreen.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsplitter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstackedlayout.h \
@@ -3321,6 +3101,9 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstylepainter.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qstyleplugin.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qsystemtrayicon.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtableview.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtablewidget.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtextbrowser.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtoolbar.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtoolbox.h \
 		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/qtoolbutton.h \
@@ -3346,14 +3129,16 @@ compiler_clean: compiler_moc_predefs_clean compiler_moc_header_clean compiler_ui
 		../egs_run_control.h \
 		../egs_timer.h \
 		../egs_scoring.h \
+		../egs_rndm.h \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMainWindow \
 		../egs_shapes.h \
 		../egs_transformations.h \
-		../egs_rndm.h \
 		../egs_input.h \
 		../egs_ausgab_object.h \
 		../ausgab_objects/egs_dose_scoring/egs_dose_scoring.h \
 		../egs_library.h \
-		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTextStream
+		../../../../Qt/5.15.2/mingw81_64/include/QtCore/QTextStream \
+		../../../../Qt/5.15.2/mingw81_64/include/QtWidgets/QMenuBar
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o .obj\win3264\viewcontrol.o viewcontrol.cpp
 
 .obj/win3264/renderworker.o: renderworker.cpp renderworker.h \

@@ -61,14 +61,14 @@ static void addRunControlBlock(shared_ptr<EGS_InputStruct> blockPtr) {
 static string addRunControlExample() {
     string example = {
         R"(
-    :start run control:
-        ncase                       = 1e4
-        nbatch                      = 10    #[optional] 
-        statistical accuracy sought = 5     #[optional] 
-        max cpu hours allowed       = 0.5   #[optional] 
-        calculation                 = first #[optional] 
-        geometry error limit        = 2     #[optional] 
-    :stop run control:
+:start run control:
+    ncase                       = 1e4
+    nbatch                      = 10    #[optional] 
+    statistical accuracy sought = 5     #[optional] 
+    max cpu hours allowed       = 0.5   #[optional] 
+    calculation                 = first #[optional] 
+    geometry error limit        = 2     #[optional] 
+:stop run control:
 )"};
     return example;
 }
