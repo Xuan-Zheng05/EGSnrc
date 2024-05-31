@@ -282,6 +282,12 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
     QMenu *appMenu = exampleMenu->addMenu("Applications");
     editorLayout->setMenuBar(menuBar);
 
+    QMenu *exampleMenu2 = new QMenu("Choose application");
+    menuBar->addMenu(exampleMenu2);
+    QMenu *app1 = exampleMenu2->addMenu("tutor7pp");
+
+    editorLayout->setMenuBar(menuBar);
+
     // The input template structure
     inputStruct = make_shared<EGS_InputStruct>();
 
@@ -359,6 +365,22 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
             connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
         }
 
+        // Now try to load application specific inputs and examples
+        getAppInputs = (getAppInputsFunction) app_lib.resolve("getAppSpecificInputs");
+        if (getAppInputs) {
+            shared_ptr<EGS_InputStruct> app = getAppInputs();
+
+            if (app) {
+                inputStruct->addBlockInputs(app->getBlockInputs());
+            }
+        }
+
+        getExample = (getExampleFunction) app_lib.resolve("getAppSpecificExample");
+        if (getExample) {
+            QAction *action = appMenu->addAction("application specific");
+            action->setData(QString::fromStdString(getExample()));
+            connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
+        }
     }
 
     // Geometry definition block

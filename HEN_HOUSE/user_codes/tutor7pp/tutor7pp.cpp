@@ -735,6 +735,41 @@ int Tutor7_Application::startNewShower() {
     return 0;
 }
 
+extern "C" {
+    APP_EXPORT shared_ptr<EGS_InputStruct> getAppSpecificInputs() {
+        shared_ptr<EGS_InputStruct> tutor7Input = make_shared<EGS_InputStruct>();
+        shared_ptr<EGS_BlockInput> scoreBlock = tutor7Input->addBlockInput("scoring options");
+
+        scoreBlock->addSingleInput("scale xcc", false, "2 values");
+        scoreBlock->addSingleInput("scale bc", false, "2 values");
+        scoreBlock->addSingleInput("deflect electron after brems", false, "yes or no", {"yes", "no"});
+        scoreBlock->addSingleInput("Russian Roulette", false, "survival probability is 1/input");
+        auto regionPtr = scoreBlock->addSingleInput("pulse height regions", false, "list of regions");
+        auto binPtr = scoreBlock->addSingleInput("pulse height bins", false, "list of bins");
+
+        regionPtr->addDependency(binPtr, "", true);
+        binPtr->addDependency(regionPtr, "", true);
+        return tutor7Input;
+    }
+
+    APP_EXPORT string getAppSpecificExample() {
+        string example;
+        example = {
+        R"(
+# tutor7pp example input
+:start scoring options:
+    scale xcc = 1
+    scale bc = 2
+    deflect electron after brems = yes 
+    Russian Roulette = 5                # survival probability is 1/5
+    pulse height regions = 1 2 3
+    pulse height bins = 1 2 3
+:stop scoring options:
+)"};
+        return example;
+    }
+}
+
 #ifdef BUILD_APP_LIB
 APP_LIB(Tutor7_Application);
 #else
