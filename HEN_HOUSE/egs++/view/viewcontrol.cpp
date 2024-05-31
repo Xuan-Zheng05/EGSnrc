@@ -336,11 +336,18 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
         //         }
         //     }
         // }
-        
+
         // Add the examples from the Application library
         getExampleFunction getExample = (getExampleFunction) app_lib.resolve("getRunControlExample");
         if (getExample) {
             QAction *action = runMenu->addAction("egs_run_control");
+            action->setData(QString::fromStdString(getExample()));
+            connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
+        }
+
+        getExample = (getExampleFunction) app_lib.resolve("getmcExample");
+        if (getExample) {
+            QAction *action = appMenu->addAction("egs_monte_carlo_parameters");
             action->setData(QString::fromStdString(getExample()));
             connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
         }
@@ -351,6 +358,7 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
             action->setData(QString::fromStdString(getExample()));
             connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
         }
+
     }
 
     // Geometry definition block

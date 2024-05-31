@@ -77,7 +77,7 @@ static void addmcBlock(shared_ptr<EGS_InputStruct> blockPtr) {
     mcBlock->addSingleInput("Spin effects", false, "Default is On", {"On", "Off"});
     mcBlock->addSingleInput("Brems angular sampling", false, "Default is KM", {"KM", "Simple"});
     mcBlock->addSingleInput("Brems cross sections", false, "Default is BH", {"BH", "NIST"});
-    mcBlock->addSingleInput("Pair angular crossing", false, "Default is Simple", {"Simple", "Off", "KM"});
+    mcBlock->addSingleInput("Pair angular sampling", false, "Default is Simple", {"Simple", "Off", "KM"});
     mcBlock->addSingleInput("Triplet production", false, "Default is On", {"On", "Off"});
     mcBlock->addSingleInput("Electron Impact Ionization", false, "Default is Off", {"On", "Off", "casnati", "kolbenstvedt", "gryzinski"});
     mcBlock->addSingleInput("Bound Compton scattering", false, "Default is norej", {"On", "Off", "Simple", "norej"});
@@ -103,6 +103,39 @@ static void addvrBlock(shared_ptr<EGS_InputStruct> blockPtr) {
     rangePtr->addSingleInput("Esave", false, "E_save");
     rangePtr->addSingleInput("cavity geometry", false, "The name of a previously defined geometry");
     rangePtr->addSingleInput("rejection range medium", false, "index of the medium to calculate electron ranges");
+}
+
+static string addmcExample() {
+    string example = {
+        R"(
+:start MC transport parameter:
+    Global ECUT                    = 0.521          # Global electron transport cutoff
+    Global PCUT                    = 0.001          # Global photon transport cutoff
+    Global SMAX                    = 1e10           # Global maximum step-size restriction for e- transport
+    ESTEPE                         = 0.25           # Default is 0.25
+    XIMAX                          = 0.5            # Default is 0.5, max. value is 1.
+    Boundary crossing algorithm    = exact          # exact (default), PRESTA-I
+    Skin depth for BCA             = 3              # Default value is 3 for exact boundary crossing
+    Electron-step algorithm        = PRESTA-II      # PRESTA-II (default),PRESTA-I
+    Spin effects                   = On             # On (default),Off
+    Brems angular sampling         = KM             # Simple,KM (default)
+    Brems cross sections           = BH             # BH (default), NIST, NRC
+    Pair angular sampling          = Simple         # Off, Simple (default),KM
+    Triplet production             = Off            # On or Off (default)
+    Electron Impact Ionization     = Off            # On, Off (default), casnati, kolbenstvedt, gryzinski
+    Bound Compton scattering       = norej          # On, Off, Simple, norej (default)
+    Radiative Compton corrections  = Off            # On,  Off (default)
+    Rayleigh scattering            = Off            # On ,Off (default), custom
+    Photoelectron angular sampling = On             # On (default),Off
+    Atomic relaxations             = On             # On (default),Off
+    Photon cross sections          = xcom           # si, epdl, xcom (default) or user-supplied
+    Photon cross-sections output   = Off            # Off (default) or On
+    Compton cross sections         = comp_xsections # user-supplied
+    Photonuclear attenuation       = Off            # Off (default) or On
+    Photonuclear cross sections    = default        # default (default) or user-supplied
+:stop MC transport parameter:
+)"};
+    return example;
 }
 
 /*! \brief A structure holding the information of one particle
@@ -1271,6 +1304,9 @@ public:
             addRngDefinitionBlock(appInputStruct);\
             addRunControlBlock(appInputStruct);\
             return appInputStruct;\
+        }\
+        APP_EXPORT string getmcExample() {\
+            return addmcExample();\
         }\
         APP_EXPORT string getRunControlExample() {\
             return addRunControlExample();\
