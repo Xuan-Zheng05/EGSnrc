@@ -141,6 +141,7 @@
 #include "egs_functions.h"
 //! We use the EGS_Input class
 #include "egs_input.h"
+#include "egs_input_struct.h"
 //! To get the maximum source energy
 #include "egs_base_source.h"
 #include "egs_rndm.h"

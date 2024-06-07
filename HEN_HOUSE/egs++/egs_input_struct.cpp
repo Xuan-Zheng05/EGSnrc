@@ -58,6 +58,17 @@ void EGS_InputStruct::addBlockInputs(vector<shared_ptr<EGS_BlockInput>> blocks) 
     blockInputs.insert(blockInputs.end(), blocks.begin(), blocks.end());
 }
 
+void EGS_InputStruct::removeBlockInput(string title) {
+    auto it = blockInputs.begin();
+    while (it != blockInputs.end()) {
+        if ((*it)->getTitle() == title) {
+            it = blockInputs.erase(it); 
+        } else {
+            ++it;
+        }
+    }
+}
+
 vector<shared_ptr<EGS_BlockInput>> EGS_InputStruct::getBlockInputs() {
     return blockInputs;
 }

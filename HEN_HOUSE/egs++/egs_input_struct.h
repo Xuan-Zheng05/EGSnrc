@@ -259,6 +259,9 @@ public:
     /*! \brief Add a list of input blocks that are already defined as \a blocks */
     void addBlockInputs(vector<shared_ptr<EGS_BlockInput>> blocks);
 
+    /*! \brief Remove the input block named \a blockTitle. */
+    void removeBlockInput(string blockTitle);
+
     /*! \brief Get the list of input blocks. */
     vector<shared_ptr<EGS_BlockInput>> getBlockInputs();
 

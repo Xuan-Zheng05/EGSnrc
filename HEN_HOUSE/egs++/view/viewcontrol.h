@@ -149,6 +149,7 @@ public slots:
     virtual void changeTrackMaxPo(int t);
     virtual void updateTracks(vector<size_t> ntracks);
     virtual void insertInputExample();
+    virtual void setApplication();
 
 private:
 
@@ -212,6 +213,8 @@ private:
     EGS_AdvancedApplication *egsApp;
     shared_ptr<EGS_InputStruct> inputStruct;
     QMenu *exampleMenu;
+    string selectedApplication = "none";
+    string lib_dir;
 
 protected slots:
 

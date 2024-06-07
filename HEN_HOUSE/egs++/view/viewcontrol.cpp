@@ -79,7 +79,7 @@ typedef EGS_BaseSource *(*createSourceFunction)();
 typedef EGS_BaseShape *(*createShapeFunction)();
 typedef EGS_AusgabObject *(*createAusgabObjectFunction)();
 typedef shared_ptr<EGS_InputStruct> (*getAppInputsFunction)();
-typedef shared_ptr<EGS_InputStruct> (*getAppInputsFunction2)();
+typedef shared_ptr<EGS_InputStruct> (*getAppSpecificInputsFunction)();
 typedef shared_ptr<EGS_BlockInput> (*getInputsFunction)();
 typedef string (*getExampleFunction)();
 
@@ -223,7 +223,7 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
         egsFatal("test fail\n\n");
     }
 
-    string lib_dir;
+    //string lib_dir;
     EGS_Application::checkEnvironmentVar(appc,appv,"-e","--egs-home","EGS_HOME",lib_dir);
     lib_dir += "bin";
     lib_dir += fs;
@@ -253,8 +253,9 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
         }
     }
 
-
-
+    // Get a list of all the libraries in the bin directory for applications
+    QDir binDirectory(lib_dir.c_str());
+    QStringList binLibraries = binDirectory.entryList(QStringList() << (lib_prefix + "*" + lib_suffix).c_str(), QDir::Files);
 
     // Get a list of all the libraries in the dso directory
     string dso_dir;
@@ -280,12 +281,28 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
     QMenu *mediaMenu = exampleMenu->addMenu("Media");
     QMenu *runMenu = exampleMenu->addMenu("Run Control");
     QMenu *appMenu = exampleMenu->addMenu("Applications");
-    editorLayout->setMenuBar(menuBar);
 
+    // Creates the example menu for different applications
     QMenu *exampleMenu2 = new QMenu("Choose application");
     menuBar->addMenu(exampleMenu2);
-    QMenu *app1 = exampleMenu2->addMenu("tutor7pp");
 
+    QAction *action = exampleMenu2->addAction("none");
+    action->setData("none");
+    connect(action,  &QAction::triggered, this, [this] { setApplication(); });
+
+    for (const auto &lib : binLibraries) {
+        // Remove the extension
+        QString libName = lib.left(lib.lastIndexOf("."));
+
+        // Remove the prefix (EGS_Library adds it automatically)
+        libName = libName.right(libName.length() - lib_prefix.length());
+        egsInformation("Trying %s\n", libName.toLatin1().data());
+
+        // Adds the button to the menu
+        QAction *action = exampleMenu2->addAction(libName);
+        action->setData(libName);
+        connect(action,  &QAction::triggered, this, [this] { setApplication(); });
+    }
     editorLayout->setMenuBar(menuBar);
 
     // The input template structure
@@ -361,23 +378,6 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
         getExample = (getExampleFunction) app_lib.resolve("getRngDefinitionExample");
         if (getExample) {
             QAction *action = appMenu->addAction("egs_rng_definition");
-            action->setData(QString::fromStdString(getExample()));
-            connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
-        }
-
-        // Now try to load application specific inputs and examples
-        getAppInputs = (getAppInputsFunction) app_lib.resolve("getAppSpecificInputs");
-        if (getAppInputs) {
-            shared_ptr<EGS_InputStruct> app = getAppInputs();
-
-            if (app) {
-                inputStruct->addBlockInputs(app->getBlockInputs());
-            }
-        }
-
-        getExample = (getExampleFunction) app_lib.resolve("getAppSpecificExample");
-        if (getExample) {
-            QAction *action = appMenu->addAction("application specific");
             action->setData(QString::fromStdString(getExample()));
             connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
         }
@@ -3491,5 +3491,40 @@ void GeometryViewControl::insertInputExample() {
     QTextCursor cursor(egsinpEdit->textCursor());
     egsinpEdit->insertPlainText(pAction->data().toString());
 }
+
+void GeometryViewControl::setApplication() {
+
+    // Gets the selected application from the menu
+    QAction *pAction = qobject_cast<QAction *>(sender());
+    string newlySelectedApp = pAction->data().toString().toStdString();
+    egsInformation("Selected application: %s\n", newlySelectedApp.c_str());
+
+    //inputStruct->removeBlockInput(selectedApplication);
+    inputStruct->removeBlockInput("scoring options");
+
+    // Load the new library
+    // Do not load if the default is selected
+    if (newlySelectedApp != "none") {
+        egsInformation("Loading library: %s\n", newlySelectedApp.c_str());
+        EGS_Library app_lib(newlySelectedApp.c_str(),lib_dir.c_str());
+        if (!app_lib.load()) {
+            egsWarning("Failed to load inputs and example for applications\n");
+        } else {
+            getAppInputsFunction getAppInputs = (getAppInputsFunction) app_lib.resolve("getAppSpecificInputs");
+            egsInformation("getAppInputs %s\n", getAppInputs ? "true" : "false");
+
+            if (getAppInputs) {
+                shared_ptr<EGS_InputStruct> app = getAppInputs();
+                if (app) {
+                    inputStruct->addBlockInputs(app->getBlockInputs());
+                }
+            }
+        }
+    }
+
+    selectedApplication = newlySelectedApp;
+    egsinpEdit->setInputStruct(inputStruct);
+}
+
 
 
