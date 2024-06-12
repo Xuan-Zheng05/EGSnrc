@@ -740,6 +740,7 @@ extern "C" {
     APP_EXPORT shared_ptr<EGS_InputStruct> getAppSpecificInputs() {
         shared_ptr<EGS_InputStruct> tutor7Input = make_shared<EGS_InputStruct>();
         shared_ptr<EGS_BlockInput> scoreBlock = tutor7Input->addBlockInput("scoring options");
+        scoreBlock->setAppName("tutor7pp");
 
         scoreBlock->addSingleInput("scale xcc", false, "2 values");
         scoreBlock->addSingleInput("scale bc", false, "2 values");
