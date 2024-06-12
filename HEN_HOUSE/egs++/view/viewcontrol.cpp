@@ -3499,12 +3499,14 @@ void GeometryViewControl::setApplication() {
     string newlySelectedApp = pAction->data().toString().toStdString();
     egsInformation("Selected application: %s\n", newlySelectedApp.c_str());
 
-    //inputStruct->removeBlockInput(selectedApplication);
-    inputStruct->removeBlockInput("scoring options");
+    // Removes previous application inputs
+    if (selectedApplication != "None") {
+        inputStruct->removeBlockInputByApp(selectedApplication);
+    }
 
     // Load the new library
     // Do not load if the default is selected
-    if (newlySelectedApp != "none") {
+    if (newlySelectedApp != "None") {
         egsInformation("Loading library: %s\n", newlySelectedApp.c_str());
         EGS_Library app_lib(newlySelectedApp.c_str(),lib_dir.c_str());
         if (!app_lib.load()) {

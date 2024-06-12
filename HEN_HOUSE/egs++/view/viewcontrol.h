@@ -213,7 +213,7 @@ private:
     EGS_AdvancedApplication *egsApp;
     shared_ptr<EGS_InputStruct> inputStruct;
     QMenu *exampleMenu;
-    string selectedApplication = "none";
+    string selectedApplication = "None";
     string lib_dir;
 
 protected slots:
