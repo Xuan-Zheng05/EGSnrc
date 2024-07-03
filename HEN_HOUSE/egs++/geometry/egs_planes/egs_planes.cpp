@@ -109,6 +109,10 @@ extern "C" {
         // EGS_PlaneCollection
         auto normsPtr = geomBlockInput->addSingleInput("normals", true, "3N number inputs For each plane's normal");
         normsPtr->addDependency(typePtr, "EGS_PlaneCollection");
+        auto mediaPtr = geomBlockInput->addBlockInput("media input");
+        mediaPtr->addDependency(typePtr, "EGS_PlaneCollection");
+        mediaPtr->addSingleInput("media", false, "");
+        mediaPtr->addSingleInput("set medium", false, "");
 
         // Alternative definition of the plane position
         auto fpPtr = geomBlockInput->addSingleInput("first plane", false, "The position of the first plane.");

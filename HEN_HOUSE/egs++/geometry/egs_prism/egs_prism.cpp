@@ -62,6 +62,9 @@ extern "C" {
 
         geomBlockInput->addSingleInput("closed", false, "Two inputs that define the distance from the top and bottom prism plane to the plane used to define the polygon");
         geomBlockInput->addSingleInput("points", true, "A list of 2D or 3D positions.");
+        
+        shared_ptr<EGS_BlockInput> mediaInput = geomBlockInput->addBlockInput("media input");
+        mediaInput->addSingleInput("media", false, "");
     }
 
     EGS_PRISM_EXPORT string getExample(string type) {

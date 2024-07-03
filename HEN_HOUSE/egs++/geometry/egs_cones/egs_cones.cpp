@@ -281,6 +281,9 @@ extern "C" {
         anglesRadPtr->addDependency(anglesPtr, "", true);
         anglesPtr->addDependency(anglesRadPtr, "", true);
         geomBlockInput->addSingleInput("flag", false, "0 or 1 or 2. This input affects the region numbering algorithm; see the documentation for details.")->addDependency(typePtr, "EGS_ConeSet");
+        auto mediaPtr = geomBlockInput->addBlockInput("media input");
+        mediaPtr->addDependency(typePtr, "EGS_ConeSet");
+        mediaPtr->addSingleInput("media", true, "");
 
         // EGS_SimpleCone
         auto anglePtr = geomBlockInput->addSingleInput("opening angle", false, "The opening angle of the cone in degrees.");

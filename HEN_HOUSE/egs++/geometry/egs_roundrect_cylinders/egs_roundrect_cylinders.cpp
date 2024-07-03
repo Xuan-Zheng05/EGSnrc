@@ -59,6 +59,10 @@ extern "C" {
         geomBlockInput->addSingleInput("radii", true, "A list of fillet radii, must be in increasing order");
         geomBlockInput->addSingleInput("midpoint", false, "The position of the midpoint (x, y, z)");
 
+        shared_ptr<EGS_BlockInput> mediaInput = geomBlockInput->addBlockInput("media input");
+        mediaInput->addSingleInput("media", false, "");
+        mediaInput->addSingleInput("set medium", false, "");
+        
         // EGS_RoundRectCylinders
         auto inpPtr = geomBlockInput->addSingleInput("x-axis", true, "x-axis of rounded rectangle (x, y, z)");
         inpPtr->addDependency(typePtr, "EGS_RoundRectCylinders");
