@@ -3514,13 +3514,46 @@ void GeometryViewControl::setApplication() {
         } else {
             getAppInputsFunction getAppInputs = (getAppInputsFunction) app_lib.resolve("getAppSpecificInputs");
             egsInformation("getAppInputs %s\n", getAppInputs ? "true" : "false");
-
+      
             if (getAppInputs) {
                 shared_ptr<EGS_InputStruct> app = getAppInputs();
+
+                // Note: this only goes 3 blocks deep, add more blocks if necessary 
+                // egsInformation("Start to print all inputs loaded with application specific inputs\n");
+                // vector<shared_ptr<EGS_BlockInput>> blockInputs = app->getBlockInputs();
+                // for (const auto& blockInput1 : blockInputs) {
+                //     egsInformation("Block name: %s\n", blockInput1->getTitle().c_str());
+
+                //     vector<shared_ptr<EGS_SingleInput>> singleInputs = blockInput1->getSingleInputs();
+                //     for (auto &input : singleInputs) {
+                //         //egsInformation("Input name: %s\n", input->getValues());
+                //         egsInformation("  single %s\n", input->getTag().c_str());
+                //     }
+
+                //     vector<shared_ptr<EGS_BlockInput>> blockInputs2 = blockInput1->getBlockInputs();
+                //     for (auto &blockInput2 : blockInputs2) {
+                //         egsInformation("  block %s\n", blockInput2->getTitle().c_str());
+
+                //         vector<shared_ptr<EGS_SingleInput>> singleInputs2 = blockInput2->getSingleInputs();
+                //         for (auto &input : singleInputs2) {
+                //         //egsInformation("Input name: %s\n", input->getValues());
+                //         egsInformation("        single %s\n", input->getTag().c_str());
+                //         }
+                //     }
+                // }
+
                 if (app) {
-                    inputStruct->addBlockInputs(app->getBlockInputs());
+                    inputStruct->addBlockInputs(app->getBlockInputs()); 
                 }
             }
+
+            // Load the application example
+            // getExampleFunction getExample = (getExampleFunction) app_lib.resolve("getAppSpecificExample");
+            // if (getExample) {
+            //     QAction *action = appMenu->addAction("current application example");
+            //     action->setData(QString::fromStdString(getExample()));
+            //     connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
+            // }
         }
     }
 

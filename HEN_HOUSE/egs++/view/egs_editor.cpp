@@ -518,6 +518,14 @@ void EGS_Editor::autoComplete() {
                 }
             }
 
+            // TESTING delete later
+            // get string list from model and loop through it all
+            // egsInformation("Start to print all inputs loaded in egs_editor from model. Blank click\n");
+            // QStringList itemListTest = model->stringList();
+            // for (const QString& item : itemListTest) {
+            //     egsInformation("Item: %s\n", item.toStdString().c_str());
+            // }
+
             // Create a selection popup
             int maxVisibleItems = 6;
             int h = (popup->sizeHintForRow(0) * qMin(maxVisibleItems, popup->model()->rowCount()) + 3) + 3;

@@ -746,11 +746,9 @@ extern "C" {
         scoreBlock->addSingleInput("scale bc", false, "2 values");
         scoreBlock->addSingleInput("deflect electron after brems", false, "yes or no", {"yes", "no"});
         scoreBlock->addSingleInput("Russian Roulette", false, "survival probability is 1/input");
-        auto regionPtr = scoreBlock->addSingleInput("pulse height regions", false, "list of regions");
-        auto binPtr = scoreBlock->addSingleInput("pulse height bins", false, "list of bins");
+        scoreBlock->addSingleInput("pulse height regions", false, "list of regions");
+        scoreBlock->addSingleInput("pulse height bins", false, "list of bins");
 
-        regionPtr->addDependency(binPtr, "", true);
-        binPtr->addDependency(regionPtr, "", true);
         return tutor7Input;
     }
 
@@ -764,8 +762,15 @@ extern "C" {
     scale bc = 2
     deflect electron after brems = yes 
     Russian Roulette = 5                # survival probability is 1/5
-    pulse height regions = 1 2 3
-    pulse height bins = 1 2 3
+    pulse height regions = 1 2 3        # a list of regions to score pulse height
+                                        # distributions
+                                        # how many bins to use for each pulse height
+                                        # distribution. This must be either a single
+                                        # input, in which case all pulse height
+                                        # distributions will use this number of bins,
+                                        # or the same number of inputs as pulse height
+                                        # regions.
+    pulse height bins = 100
 :stop scoring options:
 )"};
         return example;
