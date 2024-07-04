@@ -280,7 +280,8 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
     QMenu *ausgabMenu = exampleMenu->addMenu("Ausgab/Output");
     QMenu *mediaMenu = exampleMenu->addMenu("Media");
     QMenu *runMenu = exampleMenu->addMenu("Run Control");
-    QMenu *appMenu = exampleMenu->addMenu("Applications");
+
+    appMenu = exampleMenu->addMenu("Applications");
 
     // Creates the example menu for different applications
     QMenu *exampleMenu2 = new QMenu("Choose application");
@@ -3547,19 +3548,26 @@ void GeometryViewControl::setApplication() {
                 }
             }
 
-            // Load the application example
-            // getExampleFunction getExample = (getExampleFunction) app_lib.resolve("getAppSpecificExample");
-            // if (getExample) {
-            //     QAction *action = appMenu->addAction("current application example");
-            //     action->setData(QString::fromStdString(getExample()));
-            //     connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
-            // }
+            // Delete the previous application example
+            QList<QAction*> actions = appMenu->actions();
+            for (QAction* action : actions) {
+                if (action->text() == "egs_current_app") {
+                appMenu->removeAction(action);
+                delete action;
+                break;
+                }
+            }
+
+            //Load the application example
+            getExampleFunction getExample = (getExampleFunction) app_lib.resolve("getAppSpecificExample");
+            if (getExample) {
+                QAction *action = appMenu->addAction("egs_current_app");
+                action->setData(QString::fromStdString(getExample()));
+                connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
+            }
         }
     }
 
     selectedApplication = newlySelectedApp;
     egsinpEdit->setInputStruct(inputStruct);
 }
-
-
-

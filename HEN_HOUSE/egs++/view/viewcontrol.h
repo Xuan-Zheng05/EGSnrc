@@ -215,6 +215,7 @@ private:
     QMenu *exampleMenu;
     string selectedApplication = "None";
     string lib_dir;
+    QMenu *appMenu;
 
 protected slots:
 

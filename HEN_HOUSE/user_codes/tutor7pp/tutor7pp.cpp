@@ -742,6 +742,7 @@ extern "C" {
         shared_ptr<EGS_BlockInput> scoreBlock = tutor7Input->addBlockInput("scoring options");
         scoreBlock->setAppName("tutor7pp");
 
+        // not sure about the inputs for scale xcc and scale bc
         scoreBlock->addSingleInput("scale xcc", false, "2 values");
         scoreBlock->addSingleInput("scale bc", false, "2 values");
         scoreBlock->addSingleInput("deflect electron after brems", false, "yes or no", {"yes", "no"});
