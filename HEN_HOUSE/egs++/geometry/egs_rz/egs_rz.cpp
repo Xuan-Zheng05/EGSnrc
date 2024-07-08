@@ -230,15 +230,13 @@ extern "C" {
     static void setInputs() {
         inputSet = true;
 
-        setBaseGeometryInputs(false);
+        setBaseGeometryInputs();
 
         geomBlockInput->getSingleInput("library")->setValues({"EGS_RZ"});
 
         // Format: name, isRequired, description, vector string of allowed values
         auto  radPtr = geomBlockInput->addSingleInput("radii", false, "A list of radii, must be in increasing order");
         auto planePtr = geomBlockInput->addSingleInput("z-planes", false, "Input for z-planes");
-        shared_ptr<EGS_BlockInput> mediaInput = geomBlockInput->addBlockInput("media input");
-        mediaInput->addSingleInput("media", false, "");
 
         // Or can define using slabs and shells
         auto num_shellPtr = geomBlockInput->addSingleInput("number of shells", false, "A list of the number of shells");

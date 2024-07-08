@@ -111,8 +111,6 @@ extern "C" {
         geomBlockInput->addSingleInput("tip", true, "The 3D position of the tip of the pyramid (x, y ,z)");
         geomBlockInput->addSingleInput("closed", false, "0 (open) or 1 (closed)");
         
-        shared_ptr<EGS_BlockInput> mediaInput = geomBlockInput->addBlockInput("media input");
-        mediaInput->addSingleInput("media", false, "");
     }
 
     EGS_PYRAMID_EXPORT string getExample(string type) {

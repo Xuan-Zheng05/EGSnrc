@@ -84,8 +84,9 @@ extern "C" {
 
         // Format: name, isRequired, description, vector string of allowed values
         geomBlockInput->addSingleInput("box size", true, "1 number defining the side-length of a cube, or 3 numbers defining the x, y, and z side-lengths.");
-        shared_ptr<EGS_BlockInput> mediaInput = geomBlockInput->addBlockInput("media input");
-        mediaInput->addSingleInput("media", false, "");
+        // shared_ptr<EGS_BlockInput> mediaInput = geomBlockInput->addBlockInput("media input");
+        // mediaInput->addSingleInput("media", false, "");
+        // mediaInput->addSingleInput("set medium", false, "");
     }
 
     EGS_BOX_EXPORT string getExample() {

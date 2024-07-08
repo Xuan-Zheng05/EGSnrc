@@ -3552,9 +3552,9 @@ void GeometryViewControl::setApplication() {
             QList<QAction*> actions = appMenu->actions();
             for (QAction* action : actions) {
                 if (action->text() == "egs_current_app") {
-                appMenu->removeAction(action);
-                delete action;
-                break;
+                    appMenu->removeAction(action);
+                    delete action;
+                    break;
                 }
             }
 

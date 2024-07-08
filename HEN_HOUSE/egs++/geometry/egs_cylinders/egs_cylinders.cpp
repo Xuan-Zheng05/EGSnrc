@@ -58,9 +58,6 @@ extern "C" {
         // EGS_Cylinders
         auto inpPtr = geomBlockInput->addSingleInput("axis", true, "The unit vector defining the axis along the length of the cylinder.");
         inpPtr->addDependency(typePtr, "EGS_Cylinders");
-
-        shared_ptr<EGS_BlockInput> mediaInput = geomBlockInput->addBlockInput("media input");
-        mediaInput->addSingleInput("media", false, "");
     }
 
     EGS_CYLINDERS_EXPORT string getExample(string type) {

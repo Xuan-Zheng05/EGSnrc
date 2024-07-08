@@ -693,9 +693,6 @@ extern "C" {
         geomBlockInput->addSingleInput("radii", true, "A of list of sphere radii in increasing order.");
         geomBlockInput->addSingleInput("midpoint", false, "The position of the middle of the sphere (x, y, z)");
 
-        shared_ptr<EGS_BlockInput> mediaInput = geomBlockInput->addBlockInput("media input");
-        mediaInput->addSingleInput("media", false, "");
-        mediaInput->addSingleInput("set medium", false, "");
     }
 
     EGS_SPHERES_EXPORT string getExample(string type) {
