@@ -293,6 +293,7 @@ extern "C" {
         geomBlockInput->addSingleInput("height", false, "The height of the cone.");
         auto mediaPtr2 = geomBlockInput->addBlockInput("media input");
         mediaPtr2->addDependency(typePtr, "EGS_SimpleCone");
+        mediaPtr2->addDependency(typePtr, "EGS_ParallelCones");
         mediaPtr2->addSingleInput("media", true, "");
         mediaPtr2->addSingleInput("set medium", false, "");
 

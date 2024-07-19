@@ -382,6 +382,13 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
             action->setData(QString::fromStdString(getExample()));
             connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
         }
+        
+        getExample = (getExampleFunction) app_lib.resolve("getMediaExample");
+        if (getExample) {
+            QAction *action = mediaMenu->addAction("egs_example_media");
+            action->setData(QString::fromStdString(getExample()));
+            connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
+        }
     }
 
     // Geometry definition block

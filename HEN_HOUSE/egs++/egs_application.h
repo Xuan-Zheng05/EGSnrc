@@ -105,6 +105,26 @@ static void addvrBlock(shared_ptr<EGS_InputStruct> blockPtr) {
     rangePtr->addSingleInput("rejection range medium", false, "index of the medium to calculate electron ranges");
 }
 
+static void addMediaDefBlock(shared_ptr<EGS_InputStruct> blockPtr) {
+    shared_ptr<EGS_BlockInput> mediaBlockInput = blockPtr->addBlockInput("media definition");
+    mediaBlockInput->addSingleInput("ae", false, "");
+    mediaBlockInput->addSingleInput("ap", false, "");
+    mediaBlockInput->addSingleInput("ue", false, "");
+    mediaBlockInput->addSingleInput("up", false, "");
+
+    shared_ptr<EGS_BlockInput> mediumBlock = mediaBlockInput->addBlockInput("pegsless");
+    mediumBlock->addSingleInput("elements", false, "");
+    mediumBlock->addSingleInput("number of atoms", false, "");
+    mediumBlock->addSingleInput("mass fractions", false, "");
+    mediumBlock->addSingleInput("rho", false, "");
+    mediumBlock->addSingleInput("sterncid", false, "");
+    mediumBlock->addSingleInput("stopping powers", false, "{restricted total, unrestricted collision, unrestricted collision and radiative, unrestricted collision and restricted radiative, restricted collision and unrestricted radiative, unrestricted radiative}");
+    mediumBlock->addSingleInput("bremsstrahlung correction", false, "");
+    mediumBlock->addSingleInput("gas pressure", false, "");
+    mediumBlock->addSingleInput("density correction file", false, "");
+    mediumBlock->addSingleInput("e- stopping power output file", false, ""); 
+}
+
 static string addmcExample() {
     string example = {
         R"(
@@ -134,6 +154,14 @@ static string addmcExample() {
     Photonuclear attenuation       = Off            # Off (default) or On
     Photonuclear cross sections    = default        # default (default) or user-supplied
 :stop MC transport parameter:
+)"};
+    return example;
+}
+
+static string addMediaExample() {
+    string example = {
+        R"(
+Placeholder
 )"};
     return example;
 }
@@ -1302,6 +1330,7 @@ public:
             addvrBlock(appInputStruct);\
             addRngDefinitionBlock(appInputStruct);\
             addRunControlBlock(appInputStruct);\
+            addMediaDefBlock(appInputStruct);\
             return appInputStruct;\
         }\
         APP_EXPORT string getmcExample() {\
@@ -1312,6 +1341,9 @@ public:
         }\
         APP_EXPORT string getRngDefinitionExample() {\
             return addRngDefinitionExample();\
+        }\
+        APP_EXPORT string getMediaExample() {\
+            return addMediaExample();\
         }\
     }\
 
