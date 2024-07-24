@@ -673,11 +673,11 @@ shared_ptr<EGS_BlockInput> EGS_Editor::getBlockInput(QString &blockTitle, QTextC
     bool foundTag;
     QString library = getInputValue("library", cursor.block(), foundTag);
 
-    egsInformation("Printing parentBlockTitle: %s\n", parentTitle.toLatin1().data());
+    //egsInformation("Printing parentBlockTitle: %s\n", parentTitle.toLatin1().data());
     // If the parent block is media definition, then just return pegsless
-    if (parentTitle.toStdString() == "media definition") {
+    if (parentTitle.toStdString() == "media definition" && blockTitle != "pegsless") {
         shared_ptr<EGS_BlockInput> inputBlock = inputStruct->getBlockInput("media definition")->getBlockInput("pegsless");
-
+        //egsInformation("Testing in here\n");
         return inputBlock;
     }
 

@@ -223,7 +223,6 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
         egsFatal("test fail\n\n");
     }
 
-    //string lib_dir;
     EGS_Application::checkEnvironmentVar(appc,appv,"-e","--egs-home","EGS_HOME",lib_dir);
     lib_dir += "bin";
     lib_dir += fs;
@@ -382,7 +381,7 @@ GeometryViewControl::GeometryViewControl(QWidget *parent, const char *name)
             action->setData(QString::fromStdString(getExample()));
             connect(action,  &QAction::triggered, this, [this] { insertInputExample(); });
         }
-        
+
         getExample = (getExampleFunction) app_lib.resolve("getMediaExample");
         if (getExample) {
             QAction *action = mediaMenu->addAction("egs_example_media");
