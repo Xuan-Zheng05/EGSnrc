@@ -75,6 +75,11 @@ static vector<string> findDensityCorrectionInputs() {
         const char fs = '/';
     #endif
     
+    // int appc = 5;
+    // char *appv[] = { "egspp", "-a", "tutor7pp", "-i", "tracks1.egsinp", "-p", "tutor_data"};
+    // string compound_dir = "";
+
+    // EGS_Application::checkEnvironmentVar(appc,appv, "HEN_HOUSE", "-H", "--hen-house", compound_dir);";
     string compound_dir = "C:";
     compound_dir += fs;
     compound_dir += "EGSnrc";
